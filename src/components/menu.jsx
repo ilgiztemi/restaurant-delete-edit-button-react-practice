@@ -3,11 +3,11 @@ import { useState } from "react";
 const Menu = ({ newMenu, setNewMenu }) => {
   const [text, setText] = useState("");
 
-  const handleDelete = (id) => {
-    const items = [...newMenu];
-    const newItems = items.filter((el) => el.id !== id);
-    setNewMenu(newItems);
-  };
+  // const handleDelete = (id) => {
+  //   const items = [...newMenu];
+  //   const newItems = items.filter((el) => el.id !== id);
+  //   setNewMenu(newItems);
+  // };
   return (
     <div>
       {newMenu.map((el) => (
